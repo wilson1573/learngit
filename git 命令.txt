@@ -1,0 +1,18 @@
+git 命令：
+一、创建仓库：
+	1、创建一个文件夹：mkdir learngit
+	2、进入创建的文件夹：cd learngit
+	2、初始化成仓库：git init
+
+二、版本提交及回退
+	1、提交分两步：
+		git add HelloWord.java
+		git commit -m "书写提交版本的注释"
+
+	2、版本回退：
+		查找git提交版本id及注释：git log （如果感觉执行git log 起输出结果太多，可以使用：git log --pretty=oneline）
+		回退：git reset --hard + 版本id
+
+	3、后悔药（回退后，又后悔了，是用git log命令又查找不到版本id）:
+		查找git的说有版本id及注释：git reflog
+		回退到真正需要的版本：git reset --hard + 版本id
